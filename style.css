@@ -1,0 +1,84 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #74b9ff, #a29bfe);
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+#text_city {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #f1f2f6;
+}
+
+#text_city:hover{
+    outline: none;
+    box-shadow: 0 0 0 2px #0984e3;
+}
+
+#button_search {
+    width: 70px;
+    border-radius: 10px;
+    border: none;
+    background-color: #0984e3;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+}
+
+#button_search:hover {
+    background-color: #74b9ff;
+    cursor: pointer;
+}
+
+/* CONTAINER MAIN */
+.container_main {
+    color: #2d3436;
+    background: #ffffff;
+    padding: 20px;
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.container_main h1 {
+    margin-bottom: 15px;
+}
+
+.container_main h2 {
+    color: #2d3436;
+}
+
+/* BUSCADOR CONTAINER  */
+.container_main .buscador {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+/* DATOS */
+.container_main .container_datos {
+    display: none;
+}

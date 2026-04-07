@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Clima App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="weather-forecast.png">
+</head>
+
+<body>
+
+    <div id="container_principal" class="container_main">
+
+        <h1>🌤️Clima</h1>
+        <div id="cont_buscador" class="buscador">
+            <input id="text_city" placeholder="Buscar Ciudad...">
+            <input id="button_search" type="button" value="Buscar">
+        </div>
+
+        <div id="cont_data" class="container_datos">
+            <h3>Ciudad:</h3>
+            <p id="ciudad"></p>
+
+            <h3>Temperatura:</h3>
+            <p id="temp"></p>
+
+            <h3>Estado:</h3>
+            <p id="estado"></p>
+
+            <h3>Viento:</h3>
+            <p id="viento"></p>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
