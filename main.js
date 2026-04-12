@@ -10,6 +10,7 @@ const container_main = document.getElementById("container_principal");
 const container_data = document.getElementById("cont_data");
 const container_buscador = document.getElementById("cont_buscador");
 
+container_data.hidden = true;
 
 btn_search.addEventListener("click", () => {
     const city_searched = input_city.value;
@@ -26,6 +27,7 @@ btn_search.addEventListener("click", () => {
     setTimeout(() => {
         loading.remove();
         container_data.classList.remove("container_datos");
+        container_data.hidden = false;
     }, 1500);
 });
 
@@ -59,6 +61,8 @@ async function obtenerClima(city_searched) {
         city.textContent = input_city.value;
         tempe.textContent = `${dato_tempe} °C`;
         wind.textContent = `${dato_viento} km/h`;
+
+        
 
         if (dato_estado == 0) {
             state.textContent = "Despejado ☀️";
